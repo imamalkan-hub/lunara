@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200" role="img" aria-label="Lunara">
+  <g transform="translate(10 10) scale(0.175)">
+  <rect width="1024" height="1024" rx="230" fill="#0B0B0F"/>
+  <rect x="36" y="36" width="952" height="952" rx="205" fill="none" stroke="#4FD1E6" stroke-width="18" opacity="0.55"/>
+  <path fill="#F1E9D6" fill-rule="evenodd" d="M 209.7,512 a 261.1,261.1 0 1,0 522.2,0 a 261.1,261.1 0 1,0 -522.2,0 Z M 364.2,435.2 a 234.0,234.0 0 1,0 468.0,0 a 234.0,234.0 0 1,0 -468.0,0 Z"/>
+  <polygon points="737,240 758,290 810,290 771,322 787,372 737,344 687,372 703,322 664,290 716,290" fill="#4FD1E6"/>
+  <g fill="#6C7BFF">
+    <rect x="755" y="715" width="43" height="118" rx="21"/>
+    <rect x="716" y="755" width="118" height="43" rx="21"/>
+  </g>
+  </g>
+  <text x="215" y="122" font-family="Fraunces, Georgia, serif" font-size="78" font-weight="700" fill="#F1E9D6">Lunara</text>
+  <text x="217" y="158" font-family="Manrope, Helvetica, sans-serif" font-size="21" font-weight="600" letter-spacing="2.4" fill="#4FD1E6">SLEEP TRACKING</text>
+</svg>

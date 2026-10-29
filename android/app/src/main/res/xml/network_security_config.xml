@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ağ güvenliği yapılandırması.
+
+  Varsayılan olarak açık metin (HTTP) trafiği yasaktır — release
+  sürümünde tüm iletişim HTTPS üzerinden olmalıdır. Geliştirme emülatörü
+  (10.0.2.2) ve yerel sunucu için istisna tanımlanır.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

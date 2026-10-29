@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lunara tasarım token'ları — rakipler araştırmasından türetildi.
+         Koyu palet, AMOLED uyumlu canvas, uyku evreleri için ayrı renkler. -->
+    <color name="canvas">#0B0B0F</color>
+    <color name="surface_1">#151D28</color>
+    <color name="surface_2">#1E2430</color>
+    <color name="hairline">#242B38</color>
+    <color name="text_1">#F1E9D6</color>
+    <color name="text_2">#8A93A6</color>
+    <color name="text_3">#5A6272</color>
+    <color name="accent">#4FD1E6</color>
+    <color name="accent_2">#6C7BFF</color>
+    <color name="warn">#FFB74D</color>
+    <color name="alert">#F44336</color>
+    <color name="snore">#FF7043</color>
+    <color name="ok">#8BE28B</color>
+
+    <color name="stage_awake">#FFB74D</color>
+    <color name="stage_rem">#E85A9E</color>
+    <color name="stage_light">#4FC3F7</color>
+    <color name="stage_deep">#3F51B5</color>
+    <color name="stage_inbed">#3A4152</color>
+</resources>

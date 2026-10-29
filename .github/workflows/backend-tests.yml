@@ -1,0 +1,25 @@
+name: Backend tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # node:sqlite requires Node >= 22.5
+      - name: Verify Node version
+        run: node -e "console.log(process.version)"
+
+      - name: Run tests
+        working-directory: backend
+        run: node --test "test/**/*.test.js"

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lunara</string>
+
+    <string name="notification_channel_tracking">Sleep tracking</string>
+    <string name="notification_channel_tracking_desc">Shown while sleep tracking runs overnight</string>
+    <string name="notification_tracking_title">Sleep tracking active</string>
+    <string name="notification_tracking_stop">Stop</string>
+</resources>

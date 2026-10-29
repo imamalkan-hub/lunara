@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Lunara">
+  <rect width="1024" height="1024" rx="230" fill="#0B0B0F"/>
+  <rect x="35.8" y="35.8" width="952.3" height="952.3" rx="204" fill="none" stroke="#4FD1E6" stroke-width="10.2" opacity="0.55"/>
+  <path fill="#F1E9D6" fill-rule="evenodd" d="M 206.6,438.9 a 232.2,232.2 0 1,0 464.5,0 a 232.2,232.2 0 1,0 -464.5,0 Z M 332.1,359.9 a 199.7,199.7 0 1,0 399.5,0 a 199.7,199.7 0 1,0 -399.5,0 Z"/>
+  <polygon points="744.2,189.4 760.2,232.0 805.6,234.0 770.0,262.3 782.2,306.1 744.2,281.0 706.3,306.1 718.5,262.3 682.9,234.0 728.3,232.0" fill="#4FD1E6"/>
+  <g fill="#6C7BFF"><rect x="727.0" y="662.5" width="34.4" height="180.6" rx="17.2"/><rect x="653.9" y="735.6" width="180.6" height="34.4" rx="17.2"/></g>
+  <path d="M 99.1,800.2 L 135.0,761.4 L 170.8,800.2 L 206.6,761.4 L 242.5,800.2 L 278.3,761.4 L 314.2,800.2 L 350.0,761.4 L 385.8,800.2 L 421.7,761.4 L 457.5,800.2 L 493.4,761.4 L 529.2,800.2" fill="none" stroke="#4FD1E6" stroke-width="11.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.78"/>
+</svg>

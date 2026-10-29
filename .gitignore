@@ -1,0 +1,45 @@
+# --- Android build artifacts ---
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# --- Release signing (NEVER COMMIT) ---
+keystore/
+*.jks
+*.keystore
+android/gradle.properties.local
+android/keystore.properties
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Database (yerel kopyalar) ---
+backend/data/*.db
+backend/data/*.db-wal
+backend/data/*.db-shm
+
+# --- Secrets / env ---
+.env
+.env.local
+*.pem
+*.key
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.iml
+
+# --- Logs ---
+*.log
+/tmp/
