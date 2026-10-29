@@ -266,6 +266,47 @@ fun AboutScreen(onBack: () -> Unit) {
             }
         }
 
+        // --- Demo hesap ---
+        item {
+            Column(
+                Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(18.dp))
+                    .background(Surface1)
+                    .padding(18.dp),
+            ) {
+                Text(
+                    "DEMO ACCOUNT",
+                    color = Accent,
+                    fontSize = 10.sp,
+                    fontWeight = FontWeight.Bold,
+                    letterSpacing = 0.9.sp,
+                )
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    "demo@lunara.app",
+                    color = Text1,
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+                Text(
+                    "demo1234",
+                    color = Text1,
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+                Spacer(Modifier.height(6.dp))
+                Text(
+                    "A shared account with sample data so you can explore Lunara without " +
+                        "signing up. It holds no personal information — you can delete " +
+                        "anything you add.",
+                    color = Text3,
+                    fontSize = 12.sp,
+                    lineHeight = 17.sp,
+                )
+            }
+        }
+
         item {
             Spacer(Modifier.height(8.dp))
             Text(

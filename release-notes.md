@@ -39,6 +39,19 @@ Requires **Android 8.0 (API 26) or newer**.
 
 > Android will warn you that the file came from outside the Play Store — this is normal for any APK. Enable *Install unknown apps* for your browser to continue.
 
+### 🧪 Try it instantly — demo account
+
+No signup needed. The sign-in screen has a **Try the demo** button that fills the credentials in for you:
+
+```
+demo@lunara.app
+demo1234
+```
+
+The demo account comes with sample sleep sessions, so the hypnogram, sleep score, 30-day trends and doctor search are all populated from the first launch. It is a public account with no personal data — you can delete anything you add.
+
+---
+
 ### 📋 Full changelog
 
 **Sleep tracking**

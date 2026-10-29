@@ -86,6 +86,20 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             .onFailure { _message.value = it.message ?: "Sign up failed" }
     }
 
+    /**
+     * Deneme (demo) hesabıyla giriş.
+     *
+     * Uygulamayı denemek isteyen kullanıcılar için tek dokunuşla giriş —
+     * `demo@lunara.app` / `demo1234`. Hesap herkese açıktır; yalnızca
+     * örnek veri içerir ve kişisel bilgi barındırmaz.
+     */
+    fun loginAsDemo() = login(DEMO_EMAIL, DEMO_PASSWORD)
+
+    companion object {
+        const val DEMO_EMAIL = "demo@lunara.app"
+        const val DEMO_PASSWORD = "demo1234"
+    }
+
     fun logout() = viewModelScope.launch {
         repo.logout()
         _history.value = emptyList()

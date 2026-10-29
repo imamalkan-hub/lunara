@@ -26,6 +26,17 @@ There is **no advertising, no subscription, no premium tier and no paywall.** Ev
 
 **Lunara is not a medical device.** It performs *screening*, never diagnosis. It cannot tell you that you have sleep apnea — only a sleep study can do that. It will, however, help you understand your nights better and tell you when it is worth talking to a sleep doctor.
 
+### 🧪 Try it right now — demo account
+
+No signup needed. The sign-in screen has a **Try the demo** button that fills the credentials in for you:
+
+```
+demo@lunara.app
+demo1234
+```
+
+The demo account ships with sample sleep sessions, so the hypnogram, sleep score, 30-day trends and doctor search are all populated from the very first launch. It is a shared public account containing no personal data — feel free to delete anything you add.
+
 ---
 
 ## 📱 Download
@@ -36,9 +47,20 @@ Releases are published on the [GitHub Releases page](https://github.com/imamalka
 |---|---|---|
 | 1.0 | [`app-release.apk`](https://github.com/imamalkan-hub/lunara/releases/latest) | Release-signed, connects to `https://findsleepdoctors.com/api` |
 
-**Requirements:** Android 8.0 (API 26) or newer. ~16 MB.
+**Requirements:** Android 8.0 (API 26) or newer. ~11 MB.
 
 The APK is signed with the Lunara release key. If Android warns you, enable *Install unknown apps* for your browser — the warning appears for any APK downloaded outside the Play Store.
+
+### 🧪 Demo account
+
+Want to try it before signing up? Use the ready-made demo account — the app has a **Try the demo** button on the sign-in screen that fills these in for you:
+
+```
+demo@lunara.app
+demo1234
+```
+
+It contains sample sleep sessions so you can see the hypnogram, sleep score, trends and doctor search populated right away. The account is public and holds no personal data — feel free to delete anything you add.
 
 ---
 

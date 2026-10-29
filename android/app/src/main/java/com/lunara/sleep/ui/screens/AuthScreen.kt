@@ -147,7 +147,12 @@ fun AuthScreen(vm: MainViewModel) {
             )
         }
 
-        Spacer(Modifier.height(10.dp))
+        Spacer(Modifier.height(18.dp))
+
+        // --- Deneme hesabi ---
+        DemoPanel(onTryDemo = { vm.loginAsDemo() })
+
+        Spacer(Modifier.height(16.dp))
 
         Text(
             "Sleep tracking works without an account. An account is only needed for " +
@@ -159,6 +164,65 @@ fun AuthScreen(vm: MainViewModel) {
         )
 
         Spacer(Modifier.height(40.dp))
+    }
+}
+
+/**
+ * Deneme (demo) hesabi paneli.
+ *
+ * Kullaniciya uygulamayi denemesi icin hazir giris bilgilerini verir ve
+ * tek dokunusla doldurup giris yapar.
+ */
+@Composable
+private fun DemoPanel(onTryDemo: () -> Unit) {
+    Column(
+        Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(16.dp))
+            .background(Surface1)
+            .padding(16.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("🧪", fontSize = 17.sp)
+            Spacer(Modifier.width(8.dp))
+            Text(
+                "Try the demo",
+                color = Text1,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+            )
+        }
+        Spacer(Modifier.height(8.dp))
+        Text(
+            "Explore with a ready-made account — no signup needed.",
+            color = Text2,
+            fontSize = 12.sp,
+            lineHeight = 17.sp,
+        )
+        Spacer(Modifier.height(10.dp))
+        Text(
+            "demo@lunara.app   ·   demo1234",
+            color = Accent,
+            fontSize = 12.sp,
+            fontWeight = FontWeight.Bold,
+        )
+        Spacer(Modifier.height(12.dp))
+        Button(
+            onClick = onTryDemo,
+            modifier = Modifier.fillMaxWidth(),
+            shape = CircleShape,
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Surface1,
+                contentColor = Accent,
+            ),
+            border = androidx.compose.foundation.BorderStroke(1.dp, Accent),
+        ) {
+            Text(
+                "Sign in with demo account",
+                fontWeight = FontWeight.Bold,
+                fontSize = 13.sp,
+            )
+        }
     }
 }
 
