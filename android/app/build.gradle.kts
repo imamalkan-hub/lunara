@@ -38,11 +38,23 @@ android {
                     ?: (project.findProperty(name) as String?)
 
             val ks = prop("LUNARA_STORE_FILE")
-            if (!ks.isNullOrBlank() && file(ks).exists()) {
-                storeFile = file(ks)
-                storePassword = prop("LUNARA_STORE_PASSWORD")
-                keyAlias = prop("LUNARA_KEY_ALIAS") ?: "lunara"
-                keyPassword = prop("LUNARA_KEY_PASSWORD")
+            if (!ks.isNullOrBlank()) {
+                // Once mutlak yol, sonra proje kokunden goreceli yol.
+                val storePath = file(ks).takeIf { it.exists() }
+                    ?: rootProject.file(ks).takeIf { it.exists() }
+                    ?: rootProject.projectDir.parentFile?.let { File(it, ks) }
+                        ?.takeIf { it.exists() }
+                if (storePath != null) {
+                    storeFile = storePath
+                    storePassword = prop("LUNARA_STORE_PASSWORD")
+                    keyAlias = prop("LUNARA_KEY_ALIAS") ?: "lunara"
+                    keyPassword = prop("LUNARA_KEY_PASSWORD")
+                    logger.lifecycle("[lunara] release signing: ${storePath.absolutePath}")
+                } else {
+                    logger.lifecycle(
+                        "[lunara] release signing disabled — keystore not found for '$ks'"
+                    )
+                }
             }
         }
     }
