@@ -43,3 +43,6 @@ Thumbs.db
 # --- Logs ---
 *.log
 /tmp/
+
+# --- Kotlin build sessions ---
+android/.kotlin/
